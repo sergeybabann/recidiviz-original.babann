@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PublicSansRegular';
+    src: url('fonts/PublicSansRegular.eot');
+    src: url('fonts/PublicSansRegular.eot') format('embedded-opentype'),
+         url('fonts/PublicSansRegular.woff2') format('woff2'),
+         url('fonts/PublicSansRegular.woff') format('woff'),
+         url('fonts/PublicSansRegular.ttf') format('truetype'),
+         url('fonts/PublicSansRegular.svg#PublicSansRegular') format('svg');
+}

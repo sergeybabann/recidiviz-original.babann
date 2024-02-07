@@ -1,0 +1,91 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 190px;
+  padding-bottom: 40px;
+  min-height: 776px;
+  color: var(--light-color);
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    // hero__content
+    grid-column: 6 span;
+  }
+
+  &__title {
+    // hero__title
+    margin: 0;
+    margin-bottom: 29px;
+    font-family: var(--second-family);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 1.2px;
+  }
+
+  &__descr {
+    //hero__descr
+    margin: 0;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__bottom-container {
+    //hero__bottom-container
+    margin-top: auto; // прижимает к верху .btn hero__btn
+    width: 100%; // растягивает контейнер на всю ширину
+  }
+
+  &__subtitle {
+    //hero__subtitle
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__item {
+    //hero__item
+    grid-column: 2 span;
+  }
+
+  &__link {
+    //hero__link
+    display: block; // link занимаю всюширину item когда dispaly: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding-top: 17px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: inherit;
+    transition: color 0.3s, border-color 0.3s;
+
+    &:focus {
+      //hero__link:focus
+      outline: none;
+    }
+
+    @include hover {
+      // from mixins/_disable-mob-hover.scss
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:active {
+      //hero__link:active
+      border-color: var(--active-color);
+      color: var(--active-color);
+    }
+  }
+}
+
+.hero__link.focus-visible {
+  border-color: var(--active-color);
+}

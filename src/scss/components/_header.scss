@@ -1,0 +1,53 @@
+.header {
+  padding: 17px 0;
+
+  &__container {
+    //header__container
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+.nav {
+  align-items: center;
+  padding-right: 16px;
+
+  &__list {
+    // nav__list
+    align-items: center;
+    margin-right: 32px;
+    gap: 51px;
+  }
+
+  &__link {
+    //nav__list
+    font-size: var(--main-size);
+    color: var(--light-color);
+    transition: color 0.3s;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--accent-color); // from mixins/_disable-mob-hover.scss
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+
+.nav__link.focus-visible {
+  outline: 1px solid var(--active-color);
+  outline-offset: 3px;
+}

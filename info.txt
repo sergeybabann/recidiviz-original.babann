@@ -1,0 +1,19 @@
+!!!ВНИМАНИЕ
+
+Запускать проект только через запуск gulp
+
+Из корневого каталога проектав консоли запустить команду gulp
+
+Если проект запускать без gulp, то возникают всевозможные проблемы.
+
+url video: https://www.youtube.com/watch?v=zwB3nrWU3gA
+
+video stop:
+45.50
+
+
+Complete:
+
+header
+section hero
+
