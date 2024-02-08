@@ -9,7 +9,7 @@
 url video: https://www.youtube.com/watch?v=zwB3nrWU3gA
 
 video stop:
-54.57
+1.18.50
 
 
 Complete:

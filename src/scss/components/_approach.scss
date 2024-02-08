@@ -1,0 +1,128 @@
+.approach {
+  &__top {
+    //approach__top
+    padding: 80px;
+    background-color: #f7f8f8;
+  }
+
+  &__left {
+    //approach__left
+    grid-column: 5 span;
+    padding-top: 33px;
+  }
+
+  &__right {
+    //approach__right
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    grid-column: 7 / 6 span;
+    gap: 8px;
+  }
+
+  &__title {
+    //approach__title
+    margin: 0; //  у заголовков и абзацев margin: 0;
+    margin-bottom: 13px;
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #003331;
+  }
+
+  &__descr {
+    //approach__descr
+    margin: 0; // у заголовков и абзацев margin: 0;
+    margin-bottom: 37px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+
+  &__btn {
+    //approach__btn
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    color: #00413e;
+    padding: 16px 34px;
+  }
+
+  &__bottom {
+    //approach__bottom
+    padding: 24px 0;
+    background-color: var(--light-color);
+  }
+
+  &__item {
+    //approach__item
+    grid-column: 2 span;
+  }
+
+  &__link {
+    //approach__link
+    display: block; // link занимаю всюширину item когда dispaly: block;
+    border-top: 1px solid rgba(53, 83, 98, 0.3);
+    padding-top: 16px;
+    padding-left: 32px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    transition: color 0.3s, border-color 0.3s;
+
+    &:focus {
+      //approach__link:focus
+      outline: none;
+    }
+
+    &--ted {
+      //approach__link--ted
+      background-image: url(../img/approach-icon-1_2x.png);
+    }
+
+    &--nyt {
+      //approach__link--nyt
+      background-image: url(../img/approach-icon-2_2x.png);
+    }
+
+    &--scoop {
+      //approach__link--scoop
+      background-image: url(../img/approach-icon-3_2x.png);
+    }
+
+    &--press {
+      //approach__link--press
+      background-image: url(../img/approach-icon-4_2x.png);
+    }
+
+    &--time {
+      //approach__link--time
+      background-image: url(../img/approach-icon-5_2x.png);
+    }
+
+    &--freethink {
+      //approach__link--freethink
+      background-image: url(../img/approach-icon-6_2x.png);
+    }
+
+    @include hover {
+      // from mixins/_disable-mob-hover.scss
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:active {
+      //approach__link:active
+      border-color: var(--active-color);
+      color: var(--active-color);
+    }
+  } //approach__link
+} //approach
+
+.approach__link.focus-visible {
+  border-color: var(--active-color);
+}
