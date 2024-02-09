@@ -1,0 +1,67 @@
+.info {
+  position: relative;
+  background-color: #001414;
+  display: flex;
+  height: 680px;
+
+  &::before {
+    //info::before
+    content: "";
+    width: 287px;
+    flex-shrink: 0;
+    height: 100%;
+    background-image: url("../img/info-1_2x.png");
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    //info::after
+    content: "";
+    width: 287px;
+    flex-shrink: 0;
+    height: 100%;
+    background-image: url("../img/info-2_2x.png");
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    //info__content
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: #003331;
+    border-right: #003331;
+    padding: 0 82px; // сверху 0 по бокам 82
+    height: 100%;
+  }
+
+  &__text {
+    //info__text
+    max-width: 542px;
+  }
+
+  &__title {
+    //info__title
+    margin: 0 auto; // центрирование
+    margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    //info__descr
+    margin: 0 auto; //центрирование
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+  }
+}
