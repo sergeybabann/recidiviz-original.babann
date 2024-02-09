@@ -9,11 +9,14 @@
 url video: https://www.youtube.com/watch?v=zwB3nrWU3gA
 
 video stop:
-1.18.50
+1.27.50
 
 
 Complete:
 
 header
 section hero
+steps
+approach
+info
 
