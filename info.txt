@@ -9,7 +9,7 @@
 url video: https://www.youtube.com/watch?v=zwB3nrWU3gA
 
 video stop:
-1.27.50
+1.36.30
 
 
 Complete:
@@ -19,4 +19,6 @@ section hero
 section steps
 section approach
 section info
+section partners
+
 
