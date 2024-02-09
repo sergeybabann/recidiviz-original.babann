@@ -16,7 +16,7 @@ Complete:
 
 header
 section hero
-steps
-approach
-info
+section steps
+section approach
+section info
 
