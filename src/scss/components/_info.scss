@@ -35,8 +35,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-left: #003331;
-    border-right: #003331;
+    border-left: var(--dark-color);
+    border-right: var(--dark-color);
     padding: 0 82px; // сверху 0 по бокам 82
     height: 100%;
   }
