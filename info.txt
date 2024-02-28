@@ -23,5 +23,6 @@ section approach
 section info
 section partners
 section information
+section press
 
 
