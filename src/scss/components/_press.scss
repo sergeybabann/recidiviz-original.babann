@@ -1,0 +1,117 @@
+.press {
+  background-color: var(--light-color);
+  padding-top: 88px;
+  padding-bottom: 88px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 33px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    color: var(--dark-color);
+  }
+
+  &__link {
+    color: #00413e;
+    border-radius: 80px;
+    border: 1px solid rgba(53, 83, 98, 0.2);
+  }
+
+  &__list {
+    row-gap: var(--offset);
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+}
+
+.press-card {
+  min-height: 145px;
+  position: relative;
+  border-top: 1px solid rgba(53, 83, 98, 0.3);
+  padding-top: 16px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 11px;
+  }
+
+  &__author {
+    margin: -18px 0;
+    padding: 18px 0;
+    color: var(--text-color);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    transition: color 0.3s, border-color 0.3s;
+
+    &--ted {
+      background-image: url("../img/approach-icon-1_2x.png");
+    }
+
+    &--nyt {
+      background-image: url("../img/approach-icon-2_2x.png");
+    }
+
+    &--corr {
+      background-image: url("../img/press-1.png");
+    }
+
+    &--justice {
+      background-image: url("../img/press-2.png");
+    }
+
+    &--corr1 {
+      background-image: url("../img/press-3.png");
+    }
+
+    &--crime {
+      background-image: url("../img/press-4.png");
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+
+  &__title {
+    margin: 0;
+    color: rgb(0, 65, 62);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__link {
+    color: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

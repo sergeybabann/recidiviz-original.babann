@@ -11,7 +11,7 @@ url video:
 https://www.youtube.com/watch?v=zwB3nrWU3gA
 
 video stop:
-1.50.00
+2.06.03
 
 
 Complete:
@@ -22,5 +22,6 @@ section steps
 section approach
 section info
 section partners
+section information
 
 
