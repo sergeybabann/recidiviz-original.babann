@@ -11,6 +11,7 @@
   padding: 17px 33px;
   color: var(--light-color);
   transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
 
   &:focus {
     //btn:focus

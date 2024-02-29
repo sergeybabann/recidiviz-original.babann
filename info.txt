@@ -11,7 +11,7 @@ url video:
 https://www.youtube.com/watch?v=zwB3nrWU3gA
 
 video stop:
-2.06.03
+2.29.50
 
 
 Complete:
@@ -24,5 +24,7 @@ section info
 section partners
 section information
 section press
+section where
+section footer
 
 
